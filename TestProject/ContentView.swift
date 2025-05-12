@@ -1,17 +1,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @ObservedObject var viewModel = ChallengeViewModel()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        NavigationView {
+            VStack {
+                TextField("Enter search term...", text: $viewModel.searchTerm)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+
+                Button("Search") {
+                    viewModel.searchAttractions()
+                }
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(10)
+
+                List(viewModel.filteredList, id: \.id) { attraction in
+                    VStack(alignment: .leading) {
+                        Text(attraction.title)
+                            .font(.headline)
+                        Text(attraction.country)
+                            .font(.subheadline)
+                    }
+                }
+            }
+            .navigationBarTitle("Attraction Search")
+        }
+    }
 }
