@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E570FC5B2DD37359008523D9 /* READ.ME in Resources */ = {isa = PBXBuildFile; fileRef = E570FC592DD37353008523D9 /* READ.ME */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E54FAB2B2DD2219000253830 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		E54FAB1A2DD2218E00253830 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54FAB2A2DD2219000253830 /* TestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54FAB342DD2219000253830 /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E570FC592DD37353008523D9 /* READ.ME */ = {isa = PBXFileReference; lastKnownFileType = text; path = READ.ME; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		E54FAB112DD2218E00253830 = {
 			isa = PBXGroup;
 			children = (
+				E570FC592DD37353008523D9 /* READ.ME */,
 				E54FAB1C2DD2218E00253830 /* TestProject */,
 				E54FAB2D2DD2219000253830 /* TestProjectTests */,
 				E54FAB372DD2219000253830 /* TestProjectUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E570FC5B2DD37359008523D9 /* READ.ME in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

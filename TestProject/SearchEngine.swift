@@ -1,7 +1,5 @@
 import Foundation
 
-// 1. Implement a simple client side searching functionality.
-
 final class SearchEngine<T: Searchable> {
     var items: [T]
     
